@@ -11,6 +11,7 @@ Swift4.0版本，使用iOS自定义转场动画做的抽屉效果，不再使用
 ```
 let animator = LVAnimator()
 ```
+这个对象相当于动画管理控制器，接收push和present的事件，可根据fromVC和toVC来分配对应的转场动画
 
 ### 2、push转场简单使用
 ```
@@ -19,6 +20,7 @@ animator.setup(vc: self) { (fromVC, toVC, operation) -> ((duration: TimeInterval
     return (1, YourPushAnimation())
 }
 ```
+如不需要自定转场动画，返回nil即可
 
 ### 3、viewWillAppear注册代理
 ```
