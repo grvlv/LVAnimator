@@ -1,0 +1,26 @@
+{
+  "name" : "iconfont",
+  "unicodes" : {
+    "Icon-social-QQ" : "E61B",
+    "Icon-social-QQspace" : "E61A",
+    "Icon-copylink" : "E619",
+    "Icon-subscribe" : "E624",
+    "Icon-comments" : "E622",
+    "Icon-filter" : "E614",
+    "Icon-social-moments" : "E61D",
+    "Icon-add" : "E620",
+    "Icon-social-weibo" : "E617",
+    "Icon-updatetime" : "E60F",
+    "Icon-close" : "E621",
+    "Icon-Number" : "E625",
+    "Icon-info" : "E613",
+    "Icon-social-wechat" : "E61C",
+    "Icon-author" : "E610",
+    "Icon-Text" : "E626",
+    "Icon-internet" : "E612",
+    "Icon-moreactions" : "E616",
+    "Icon-public" : "E611",
+    "Icon-share" : "E623"
+  },
+  "filename" : "iconfont.ttf"
+}

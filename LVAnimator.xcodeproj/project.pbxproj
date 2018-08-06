@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70153008211426D800F3D9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70153007211426D800F3D9F5 /* AppDelegate.swift */; };
+		7015300A211426D800F3D9F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70153009211426D800F3D9F5 /* ViewController.swift */; };
+		7015300F211426D900F3D9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7015300E211426D900F3D9F5 /* Assets.xcassets */; };
+		70153012211426D900F3D9F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70153010211426D900F3D9F5 /* LaunchScreen.storyboard */; };
+		7015301D211426D900F3D9F5 /* LVAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015301C211426D900F3D9F5 /* LVAnimatorTests.swift */; };
+		70153028211426D900F3D9F5 /* LVAnimatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70153027211426D900F3D9F5 /* LVAnimatorUITests.swift */; };
+		7015303921142AE400F3D9F5 /* LVTransitioningDelegateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015303621142AE400F3D9F5 /* LVTransitioningDelegateHelper.swift */; };
+		7015303A21142AE400F3D9F5 /* LVAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015303721142AE400F3D9F5 /* LVAnimator.swift */; };
+		7015303B21142AE400F3D9F5 /* LVTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015303821142AE400F3D9F5 /* LVTransitionAnimation.swift */; };
+		70153041211434A800F3D9F5 /* LVTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015303D211434A800F3D9F5 /* LVTabBarItem.swift */; };
+		70153042211434A800F3D9F5 /* LVTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015303E211434A800F3D9F5 /* LVTabBarView.swift */; };
+		70153043211434A800F3D9F5 /* LVTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015303F211434A800F3D9F5 /* LVTabBar.swift */; };
+		70153044211434A800F3D9F5 /* LVTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70153040211434A800F3D9F5 /* LVTabBarController.swift */; };
+		7015304A2114362300F3D9F5 /* LVBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530462114362200F3D9F5 /* LVBaseTabBarController.swift */; };
+		7015304C2114362300F3D9F5 /* LVBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530482114362200F3D9F5 /* LVBaseViewController.swift */; };
+		7015304D2114362300F3D9F5 /* LVBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530492114362200F3D9F5 /* LVBaseNavigationController.swift */; };
+		7015305021143A9E00F3D9F5 /* LVFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015304F21143A9E00F3D9F5 /* LVFirstVC.swift */; };
+		7015305221143AB700F3D9F5 /* LVSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015305121143AB700F3D9F5 /* LVSecondVC.swift */; };
+		7015305421143AD400F3D9F5 /* LVThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015305321143AD400F3D9F5 /* LVThirdVC.swift */; };
+		7015305621143AEA00F3D9F5 /* LVFourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015305521143AEA00F3D9F5 /* LVFourthVC.swift */; };
+		7015305821144A1000F3D9F5 /* LVCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015305721144A1000F3D9F5 /* LVCenterVC.swift */; };
+		7015305A21144C2B00F3D9F5 /* LVMineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015305921144C2B00F3D9F5 /* LVMineVC.swift */; };
+		7015305C21144C3F00F3D9F5 /* LVSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015305B21144C3F00F3D9F5 /* LVSettingVC.swift */; };
+		7015306C21144F1700F3D9F5 /* LVMinePresentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015306421144F1700F3D9F5 /* LVMinePresentAnimation.swift */; };
+		7015306D21144F1700F3D9F5 /* LVMineDismissAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015306521144F1700F3D9F5 /* LVMineDismissAnimation.swift */; };
+		7015306F21145B9600F3D9F5 /* LVMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015306E21145B9600F3D9F5 /* LVMaskView.swift */; };
+		7015307121145CF400F3D9F5 /* LVAppConstantDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015307021145CF400F3D9F5 /* LVAppConstantDefine.swift */; };
+		701530732117ED4200F3D9F5 /* LVFirstDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530722117ED4100F3D9F5 /* LVFirstDetailVC.swift */; };
+		701530752117EECD00F3D9F5 /* LVFirstDetailPushAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530742117EECD00F3D9F5 /* LVFirstDetailPushAnimation.swift */; };
+		701530772117F02200F3D9F5 /* LVFirstDetailPopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530762117F02200F3D9F5 /* LVFirstDetailPopAnimation.swift */; };
+		701530792117F7E000F3D9F5 /* LVSecondDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530782117F7E000F3D9F5 /* LVSecondDetailVC.swift */; };
+		7015307D2117F8FB00F3D9F5 /* LVSecondDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015307C2117F8FB00F3D9F5 /* LVSecondDetailView.swift */; };
+		7015307F2117F90C00F3D9F5 /* LVSecondDetailCellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015307E2117F90C00F3D9F5 /* LVSecondDetailCellContent.swift */; };
+		701530812117F92200F3D9F5 /* LVSecondDetailCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530802117F92200F3D9F5 /* LVSecondDetailCellHeader.swift */; };
+		701530832117F93500F3D9F5 /* LVSecondDetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530822117F93500F3D9F5 /* LVSecondDetailCellView.swift */; };
+		701530852117F98000F3D9F5 /* LVSecondDetailSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530842117F98000F3D9F5 /* LVSecondDetailSectionModel.swift */; };
+		701530872117F99900F3D9F5 /* LVSecondDetailCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530862117F99900F3D9F5 /* LVSecondDetailCellModel.swift */; };
+		7015308B2117FA8600F3D9F5 /* LVUIFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530892117FA8600F3D9F5 /* LVUIFontStyle.swift */; };
+		7015308C2117FA8600F3D9F5 /* LVUIColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015308A2117FA8600F3D9F5 /* LVUIColorStyle.swift */; };
+		7015308E2117FC4400F3D9F5 /* LVPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015308D2117FC4400F3D9F5 /* LVPopView.swift */; };
+		701530902118012A00F3D9F5 /* LVSecondDetailPresentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015308F2118012A00F3D9F5 /* LVSecondDetailPresentAnimation.swift */; };
+		701530922118013C00F3D9F5 /* LVSecondDetailDismissAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530912118013C00F3D9F5 /* LVSecondDetailDismissAnimation.swift */; };
+		70153094211805A400F3D9F5 /* LVThirdDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70153093211805A400F3D9F5 /* LVThirdDetailVC.swift */; };
+		701530962118103300F3D9F5 /* LVThirdDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530952118103300F3D9F5 /* LVThirdDetailView.swift */; };
+		701530982118104400F3D9F5 /* LVThirdDetailCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530972118104400F3D9F5 /* LVThirdDetailCollection.swift */; };
+		7015309A2118105400F3D9F5 /* LVThirdDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530992118105400F3D9F5 /* LVThirdDetailCell.swift */; };
+		7015309C211810AB00F3D9F5 /* LVThirdDetailSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015309B211810AB00F3D9F5 /* LVThirdDetailSectionModel.swift */; };
+		7015309E211810C500F3D9F5 /* LVThirdDetailCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015309D211810C500F3D9F5 /* LVThirdDetailCellModel.swift */; };
+		701530A12118118E00F3D9F5 /* LVUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530A02118118E00F3D9F5 /* LVUIViewExtension.swift */; };
+		701530A32118186D00F3D9F5 /* LVThirdDetailPresentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530A22118186D00F3D9F5 /* LVThirdDetailPresentAnimation.swift */; };
+		701530A52118187E00F3D9F5 /* LVThirdDetailDismissAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701530A42118187E00F3D9F5 /* LVThirdDetailDismissAnimation.swift */; };
+		BF54CBC088703533EE0675A5 /* Pods_LVAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FB1AC9F900C9D97BD51055 /* Pods_LVAnimator.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70153019211426D900F3D9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70152FFC211426D800F3D9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70153003211426D800F3D9F5;
+			remoteInfo = LVAnimator;
+		};
+		70153024211426D900F3D9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70152FFC211426D800F3D9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70153003211426D800F3D9F5;
+			remoteInfo = LVAnimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F0BC90FBDC9BD899C2F33B6 /* Pods-LVAnimator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LVAnimator.release.xcconfig"; path = "Pods/Target Support Files/Pods-LVAnimator/Pods-LVAnimator.release.xcconfig"; sourceTree = "<group>"; };
+		63A5F70D3B497EAEC44BB266 /* Pods-LVAnimator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LVAnimator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LVAnimator/Pods-LVAnimator.debug.xcconfig"; sourceTree = "<group>"; };
+		70153004211426D800F3D9F5 /* LVAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LVAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70153007211426D800F3D9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70153009211426D800F3D9F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7015300E211426D900F3D9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70153011211426D900F3D9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70153013211426D900F3D9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70153018211426D900F3D9F5 /* LVAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LVAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7015301C211426D900F3D9F5 /* LVAnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVAnimatorTests.swift; sourceTree = "<group>"; };
+		7015301E211426D900F3D9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70153023211426D900F3D9F5 /* LVAnimatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LVAnimatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70153027211426D900F3D9F5 /* LVAnimatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVAnimatorUITests.swift; sourceTree = "<group>"; };
+		70153029211426D900F3D9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7015303621142AE400F3D9F5 /* LVTransitioningDelegateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVTransitioningDelegateHelper.swift; sourceTree = "<group>"; };
+		7015303721142AE400F3D9F5 /* LVAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVAnimator.swift; sourceTree = "<group>"; };
+		7015303821142AE400F3D9F5 /* LVTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVTransitionAnimation.swift; sourceTree = "<group>"; };
+		7015303D211434A800F3D9F5 /* LVTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVTabBarItem.swift; sourceTree = "<group>"; };
+		7015303E211434A800F3D9F5 /* LVTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVTabBarView.swift; sourceTree = "<group>"; };
+		7015303F211434A800F3D9F5 /* LVTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVTabBar.swift; sourceTree = "<group>"; };
+		70153040211434A800F3D9F5 /* LVTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVTabBarController.swift; sourceTree = "<group>"; };
+		701530462114362200F3D9F5 /* LVBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVBaseTabBarController.swift; sourceTree = "<group>"; };
+		701530482114362200F3D9F5 /* LVBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVBaseViewController.swift; sourceTree = "<group>"; };
+		701530492114362200F3D9F5 /* LVBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVBaseNavigationController.swift; sourceTree = "<group>"; };
+		7015304F21143A9E00F3D9F5 /* LVFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVFirstVC.swift; sourceTree = "<group>"; };
+		7015305121143AB700F3D9F5 /* LVSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondVC.swift; sourceTree = "<group>"; };
+		7015305321143AD400F3D9F5 /* LVThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdVC.swift; sourceTree = "<group>"; };
+		7015305521143AEA00F3D9F5 /* LVFourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVFourthVC.swift; sourceTree = "<group>"; };
+		7015305721144A1000F3D9F5 /* LVCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVCenterVC.swift; sourceTree = "<group>"; };
+		7015305921144C2B00F3D9F5 /* LVMineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVMineVC.swift; sourceTree = "<group>"; };
+		7015305B21144C3F00F3D9F5 /* LVSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSettingVC.swift; sourceTree = "<group>"; };
+		7015306421144F1700F3D9F5 /* LVMinePresentAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVMinePresentAnimation.swift; sourceTree = "<group>"; };
+		7015306521144F1700F3D9F5 /* LVMineDismissAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVMineDismissAnimation.swift; sourceTree = "<group>"; };
+		7015306E21145B9600F3D9F5 /* LVMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVMaskView.swift; sourceTree = "<group>"; };
+		7015307021145CF400F3D9F5 /* LVAppConstantDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVAppConstantDefine.swift; sourceTree = "<group>"; };
+		701530722117ED4100F3D9F5 /* LVFirstDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVFirstDetailVC.swift; sourceTree = "<group>"; };
+		701530742117EECD00F3D9F5 /* LVFirstDetailPushAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVFirstDetailPushAnimation.swift; sourceTree = "<group>"; };
+		701530762117F02200F3D9F5 /* LVFirstDetailPopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVFirstDetailPopAnimation.swift; sourceTree = "<group>"; };
+		701530782117F7E000F3D9F5 /* LVSecondDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailVC.swift; sourceTree = "<group>"; };
+		7015307C2117F8FB00F3D9F5 /* LVSecondDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailView.swift; sourceTree = "<group>"; };
+		7015307E2117F90C00F3D9F5 /* LVSecondDetailCellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailCellContent.swift; sourceTree = "<group>"; };
+		701530802117F92200F3D9F5 /* LVSecondDetailCellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailCellHeader.swift; sourceTree = "<group>"; };
+		701530822117F93500F3D9F5 /* LVSecondDetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailCellView.swift; sourceTree = "<group>"; };
+		701530842117F98000F3D9F5 /* LVSecondDetailSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailSectionModel.swift; sourceTree = "<group>"; };
+		701530862117F99900F3D9F5 /* LVSecondDetailCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailCellModel.swift; sourceTree = "<group>"; };
+		701530892117FA8600F3D9F5 /* LVUIFontStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVUIFontStyle.swift; sourceTree = "<group>"; };
+		7015308A2117FA8600F3D9F5 /* LVUIColorStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVUIColorStyle.swift; sourceTree = "<group>"; };
+		7015308D2117FC4400F3D9F5 /* LVPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVPopView.swift; sourceTree = "<group>"; };
+		7015308F2118012A00F3D9F5 /* LVSecondDetailPresentAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailPresentAnimation.swift; sourceTree = "<group>"; };
+		701530912118013C00F3D9F5 /* LVSecondDetailDismissAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVSecondDetailDismissAnimation.swift; sourceTree = "<group>"; };
+		70153093211805A400F3D9F5 /* LVThirdDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdDetailVC.swift; sourceTree = "<group>"; };
+		701530952118103300F3D9F5 /* LVThirdDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdDetailView.swift; sourceTree = "<group>"; };
+		701530972118104400F3D9F5 /* LVThirdDetailCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdDetailCollection.swift; sourceTree = "<group>"; };
+		701530992118105400F3D9F5 /* LVThirdDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdDetailCell.swift; sourceTree = "<group>"; };
+		7015309B211810AB00F3D9F5 /* LVThirdDetailSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdDetailSectionModel.swift; sourceTree = "<group>"; };
+		7015309D211810C500F3D9F5 /* LVThirdDetailCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdDetailCellModel.swift; sourceTree = "<group>"; };
+		701530A02118118E00F3D9F5 /* LVUIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LVUIViewExtension.swift; sourceTree = "<group>"; };
+		701530A22118186D00F3D9F5 /* LVThirdDetailPresentAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdDetailPresentAnimation.swift; sourceTree = "<group>"; };
+		701530A42118187E00F3D9F5 /* LVThirdDetailDismissAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LVThirdDetailDismissAnimation.swift; sourceTree = "<group>"; };
+		F6FB1AC9F900C9D97BD51055 /* Pods_LVAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LVAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70153001211426D800F3D9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF54CBC088703533EE0675A5 /* Pods_LVAnimator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70153015211426D900F3D9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70153020211426D900F3D9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16A0755FDC9E50AC1C273D9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63A5F70D3B497EAEC44BB266 /* Pods-LVAnimator.debug.xcconfig */,
+				1F0BC90FBDC9BD899C2F33B6 /* Pods-LVAnimator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		70152FFB211426D800F3D9F5 = {
+			isa = PBXGroup;
+			children = (
+				70153006211426D800F3D9F5 /* LVAnimator */,
+				7015301B211426D900F3D9F5 /* LVAnimatorTests */,
+				70153026211426D900F3D9F5 /* LVAnimatorUITests */,
+				70153005211426D800F3D9F5 /* Products */,
+				16A0755FDC9E50AC1C273D9D /* Pods */,
+				87383268E1DED9140CF2580C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70153005211426D800F3D9F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70153004211426D800F3D9F5 /* LVAnimator.app */,
+				70153018211426D900F3D9F5 /* LVAnimatorTests.xctest */,
+				70153023211426D900F3D9F5 /* LVAnimatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70153006211426D800F3D9F5 /* LVAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				7015309F2118118E00F3D9F5 /* LVExtension */,
+				701530882117FA8600F3D9F5 /* LVUIStyleConfig */,
+				7015305D21144F1700F3D9F5 /* LVAnimation */,
+				7015304E21143A3700F3D9F5 /* LVModules */,
+				701530452114362200F3D9F5 /* LVBase */,
+				7015303C211434A800F3D9F5 /* LVTabBarController */,
+				7015303521142ABF00F3D9F5 /* LVAnimator */,
+				70153007211426D800F3D9F5 /* AppDelegate.swift */,
+				7015307021145CF400F3D9F5 /* LVAppConstantDefine.swift */,
+				70153009211426D800F3D9F5 /* ViewController.swift */,
+				7015300E211426D900F3D9F5 /* Assets.xcassets */,
+				70153010211426D900F3D9F5 /* LaunchScreen.storyboard */,
+				70153013211426D900F3D9F5 /* Info.plist */,
+			);
+			path = LVAnimator;
+			sourceTree = "<group>";
+		};
+		7015301B211426D900F3D9F5 /* LVAnimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				7015301C211426D900F3D9F5 /* LVAnimatorTests.swift */,
+				7015301E211426D900F3D9F5 /* Info.plist */,
+			);
+			path = LVAnimatorTests;
+			sourceTree = "<group>";
+		};
+		70153026211426D900F3D9F5 /* LVAnimatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70153027211426D900F3D9F5 /* LVAnimatorUITests.swift */,
+				70153029211426D900F3D9F5 /* Info.plist */,
+			);
+			path = LVAnimatorUITests;
+			sourceTree = "<group>";
+		};
+		7015303521142ABF00F3D9F5 /* LVAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				7015303721142AE400F3D9F5 /* LVAnimator.swift */,
+				7015303821142AE400F3D9F5 /* LVTransitionAnimation.swift */,
+				7015303621142AE400F3D9F5 /* LVTransitioningDelegateHelper.swift */,
+			);
+			path = LVAnimator;
+			sourceTree = "<group>";
+		};
+		7015303C211434A800F3D9F5 /* LVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				70153040211434A800F3D9F5 /* LVTabBarController.swift */,
+				7015303F211434A800F3D9F5 /* LVTabBar.swift */,
+				7015303E211434A800F3D9F5 /* LVTabBarView.swift */,
+				7015303D211434A800F3D9F5 /* LVTabBarItem.swift */,
+			);
+			path = LVTabBarController;
+			sourceTree = "<group>";
+		};
+		701530452114362200F3D9F5 /* LVBase */ = {
+			isa = PBXGroup;
+			children = (
+				701530462114362200F3D9F5 /* LVBaseTabBarController.swift */,
+				701530482114362200F3D9F5 /* LVBaseViewController.swift */,
+				701530492114362200F3D9F5 /* LVBaseNavigationController.swift */,
+			);
+			path = LVBase;
+			sourceTree = "<group>";
+		};
+		7015304E21143A3700F3D9F5 /* LVModules */ = {
+			isa = PBXGroup;
+			children = (
+				7015307B2117F8CC00F3D9F5 /* Model */,
+				7015307A2117F8CC00F3D9F5 /* Views */,
+				7015304F21143A9E00F3D9F5 /* LVFirstVC.swift */,
+				701530722117ED4100F3D9F5 /* LVFirstDetailVC.swift */,
+				7015305121143AB700F3D9F5 /* LVSecondVC.swift */,
+				701530782117F7E000F3D9F5 /* LVSecondDetailVC.swift */,
+				7015305321143AD400F3D9F5 /* LVThirdVC.swift */,
+				70153093211805A400F3D9F5 /* LVThirdDetailVC.swift */,
+				7015305521143AEA00F3D9F5 /* LVFourthVC.swift */,
+				7015305721144A1000F3D9F5 /* LVCenterVC.swift */,
+				7015305921144C2B00F3D9F5 /* LVMineVC.swift */,
+				7015305B21144C3F00F3D9F5 /* LVSettingVC.swift */,
+			);
+			path = LVModules;
+			sourceTree = "<group>";
+		};
+		7015305D21144F1700F3D9F5 /* LVAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				7015306421144F1700F3D9F5 /* LVMinePresentAnimation.swift */,
+				7015306521144F1700F3D9F5 /* LVMineDismissAnimation.swift */,
+				701530742117EECD00F3D9F5 /* LVFirstDetailPushAnimation.swift */,
+				701530762117F02200F3D9F5 /* LVFirstDetailPopAnimation.swift */,
+				7015308F2118012A00F3D9F5 /* LVSecondDetailPresentAnimation.swift */,
+				701530912118013C00F3D9F5 /* LVSecondDetailDismissAnimation.swift */,
+				701530A22118186D00F3D9F5 /* LVThirdDetailPresentAnimation.swift */,
+				701530A42118187E00F3D9F5 /* LVThirdDetailDismissAnimation.swift */,
+			);
+			path = LVAnimation;
+			sourceTree = "<group>";
+		};
+		7015307A2117F8CC00F3D9F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7015306E21145B9600F3D9F5 /* LVMaskView.swift */,
+				7015308D2117FC4400F3D9F5 /* LVPopView.swift */,
+				7015307C2117F8FB00F3D9F5 /* LVSecondDetailView.swift */,
+				7015307E2117F90C00F3D9F5 /* LVSecondDetailCellContent.swift */,
+				701530802117F92200F3D9F5 /* LVSecondDetailCellHeader.swift */,
+				701530822117F93500F3D9F5 /* LVSecondDetailCellView.swift */,
+				701530952118103300F3D9F5 /* LVThirdDetailView.swift */,
+				701530972118104400F3D9F5 /* LVThirdDetailCollection.swift */,
+				701530992118105400F3D9F5 /* LVThirdDetailCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7015307B2117F8CC00F3D9F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				701530842117F98000F3D9F5 /* LVSecondDetailSectionModel.swift */,
+				701530862117F99900F3D9F5 /* LVSecondDetailCellModel.swift */,
+				7015309B211810AB00F3D9F5 /* LVThirdDetailSectionModel.swift */,
+				7015309D211810C500F3D9F5 /* LVThirdDetailCellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		701530882117FA8600F3D9F5 /* LVUIStyleConfig */ = {
+			isa = PBXGroup;
+			children = (
+				701530892117FA8600F3D9F5 /* LVUIFontStyle.swift */,
+				7015308A2117FA8600F3D9F5 /* LVUIColorStyle.swift */,
+			);
+			path = LVUIStyleConfig;
+			sourceTree = "<group>";
+		};
+		7015309F2118118E00F3D9F5 /* LVExtension */ = {
+			isa = PBXGroup;
+			children = (
+				701530A02118118E00F3D9F5 /* LVUIViewExtension.swift */,
+			);
+			path = LVExtension;
+			sourceTree = "<group>";
+		};
+		87383268E1DED9140CF2580C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB1AC9F900C9D97BD51055 /* Pods_LVAnimator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70153003211426D800F3D9F5 /* LVAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7015302C211426D900F3D9F5 /* Build configuration list for PBXNativeTarget "LVAnimator" */;
+			buildPhases = (
+				71BC8F8153B514E81E7AC6BF /* [CP] Check Pods Manifest.lock */,
+				70153000211426D800F3D9F5 /* Sources */,
+				70153001211426D800F3D9F5 /* Frameworks */,
+				70153002211426D800F3D9F5 /* Resources */,
+				AD4A6725092CB2F761F437AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LVAnimator;
+			productName = LVAnimator;
+			productReference = 70153004211426D800F3D9F5 /* LVAnimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70153017211426D900F3D9F5 /* LVAnimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7015302F211426D900F3D9F5 /* Build configuration list for PBXNativeTarget "LVAnimatorTests" */;
+			buildPhases = (
+				70153014211426D900F3D9F5 /* Sources */,
+				70153015211426D900F3D9F5 /* Frameworks */,
+				70153016211426D900F3D9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7015301A211426D900F3D9F5 /* PBXTargetDependency */,
+			);
+			name = LVAnimatorTests;
+			productName = LVAnimatorTests;
+			productReference = 70153018211426D900F3D9F5 /* LVAnimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70153022211426D900F3D9F5 /* LVAnimatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70153032211426D900F3D9F5 /* Build configuration list for PBXNativeTarget "LVAnimatorUITests" */;
+			buildPhases = (
+				7015301F211426D900F3D9F5 /* Sources */,
+				70153020211426D900F3D9F5 /* Frameworks */,
+				70153021211426D900F3D9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70153025211426D900F3D9F5 /* PBXTargetDependency */,
+			);
+			name = LVAnimatorUITests;
+			productName = LVAnimatorUITests;
+			productReference = 70153023211426D900F3D9F5 /* LVAnimatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70152FFC211426D800F3D9F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = GRV;
+				TargetAttributes = {
+					70153003211426D800F3D9F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					70153017211426D900F3D9F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 70153003211426D800F3D9F5;
+					};
+					70153022211426D900F3D9F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 70153003211426D800F3D9F5;
+					};
+				};
+			};
+			buildConfigurationList = 70152FFF211426D800F3D9F5 /* Build configuration list for PBXProject "LVAnimator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70152FFB211426D800F3D9F5;
+			productRefGroup = 70153005211426D800F3D9F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70153003211426D800F3D9F5 /* LVAnimator */,
+				70153017211426D900F3D9F5 /* LVAnimatorTests */,
+				70153022211426D900F3D9F5 /* LVAnimatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70153002211426D800F3D9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70153012211426D900F3D9F5 /* LaunchScreen.storyboard in Resources */,
+				7015300F211426D900F3D9F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70153016211426D900F3D9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70153021211426D900F3D9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71BC8F8153B514E81E7AC6BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LVAnimator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4A6725092CB2F761F437AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LVAnimator/Pods-LVAnimator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Iconic/Iconic.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Iconic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LVAnimator/Pods-LVAnimator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70153000211426D800F3D9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70153042211434A800F3D9F5 /* LVTabBarView.swift in Sources */,
+				701530902118012A00F3D9F5 /* LVSecondDetailPresentAnimation.swift in Sources */,
+				70153044211434A800F3D9F5 /* LVTabBarController.swift in Sources */,
+				7015307121145CF400F3D9F5 /* LVAppConstantDefine.swift in Sources */,
+				7015304C2114362300F3D9F5 /* LVBaseViewController.swift in Sources */,
+				701530832117F93500F3D9F5 /* LVSecondDetailCellView.swift in Sources */,
+				701530922118013C00F3D9F5 /* LVSecondDetailDismissAnimation.swift in Sources */,
+				7015300A211426D800F3D9F5 /* ViewController.swift in Sources */,
+				7015305C21144C3F00F3D9F5 /* LVSettingVC.swift in Sources */,
+				7015305021143A9E00F3D9F5 /* LVFirstVC.swift in Sources */,
+				7015308C2117FA8600F3D9F5 /* LVUIColorStyle.swift in Sources */,
+				7015305821144A1000F3D9F5 /* LVCenterVC.swift in Sources */,
+				7015308B2117FA8600F3D9F5 /* LVUIFontStyle.swift in Sources */,
+				7015306D21144F1700F3D9F5 /* LVMineDismissAnimation.swift in Sources */,
+				7015304A2114362300F3D9F5 /* LVBaseTabBarController.swift in Sources */,
+				7015307F2117F90C00F3D9F5 /* LVSecondDetailCellContent.swift in Sources */,
+				7015303A21142AE400F3D9F5 /* LVAnimator.swift in Sources */,
+				7015305421143AD400F3D9F5 /* LVThirdVC.swift in Sources */,
+				701530852117F98000F3D9F5 /* LVSecondDetailSectionModel.swift in Sources */,
+				701530A12118118E00F3D9F5 /* LVUIViewExtension.swift in Sources */,
+				7015305A21144C2B00F3D9F5 /* LVMineVC.swift in Sources */,
+				7015309C211810AB00F3D9F5 /* LVThirdDetailSectionModel.swift in Sources */,
+				7015309A2118105400F3D9F5 /* LVThirdDetailCell.swift in Sources */,
+				701530872117F99900F3D9F5 /* LVSecondDetailCellModel.swift in Sources */,
+				701530752117EECD00F3D9F5 /* LVFirstDetailPushAnimation.swift in Sources */,
+				701530A32118186D00F3D9F5 /* LVThirdDetailPresentAnimation.swift in Sources */,
+				7015303B21142AE400F3D9F5 /* LVTransitionAnimation.swift in Sources */,
+				701530982118104400F3D9F5 /* LVThirdDetailCollection.swift in Sources */,
+				70153043211434A800F3D9F5 /* LVTabBar.swift in Sources */,
+				701530792117F7E000F3D9F5 /* LVSecondDetailVC.swift in Sources */,
+				7015306C21144F1700F3D9F5 /* LVMinePresentAnimation.swift in Sources */,
+				70153008211426D800F3D9F5 /* AppDelegate.swift in Sources */,
+				7015307D2117F8FB00F3D9F5 /* LVSecondDetailView.swift in Sources */,
+				7015308E2117FC4400F3D9F5 /* LVPopView.swift in Sources */,
+				7015303921142AE400F3D9F5 /* LVTransitioningDelegateHelper.swift in Sources */,
+				7015304D2114362300F3D9F5 /* LVBaseNavigationController.swift in Sources */,
+				7015305221143AB700F3D9F5 /* LVSecondVC.swift in Sources */,
+				7015306F21145B9600F3D9F5 /* LVMaskView.swift in Sources */,
+				7015305621143AEA00F3D9F5 /* LVFourthVC.swift in Sources */,
+				701530732117ED4200F3D9F5 /* LVFirstDetailVC.swift in Sources */,
+				701530772117F02200F3D9F5 /* LVFirstDetailPopAnimation.swift in Sources */,
+				701530A52118187E00F3D9F5 /* LVThirdDetailDismissAnimation.swift in Sources */,
+				70153041211434A800F3D9F5 /* LVTabBarItem.swift in Sources */,
+				7015309E211810C500F3D9F5 /* LVThirdDetailCellModel.swift in Sources */,
+				701530962118103300F3D9F5 /* LVThirdDetailView.swift in Sources */,
+				701530812117F92200F3D9F5 /* LVSecondDetailCellHeader.swift in Sources */,
+				70153094211805A400F3D9F5 /* LVThirdDetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70153014211426D900F3D9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7015301D211426D900F3D9F5 /* LVAnimatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7015301F211426D900F3D9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70153028211426D900F3D9F5 /* LVAnimatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7015301A211426D900F3D9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70153003211426D800F3D9F5 /* LVAnimator */;
+			targetProxy = 70153019211426D900F3D9F5 /* PBXContainerItemProxy */;
+		};
+		70153025211426D900F3D9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70153003211426D800F3D9F5 /* LVAnimator */;
+			targetProxy = 70153024211426D900F3D9F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70153010211426D900F3D9F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70153011211426D900F3D9F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7015302A211426D900F3D9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7015302B211426D900F3D9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7015302D211426D900F3D9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A5F70D3B497EAEC44BB266 /* Pods-LVAnimator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J467B5MXV4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LVAnimator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grv.LVAnimator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7015302E211426D900F3D9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F0BC90FBDC9BD899C2F33B6 /* Pods-LVAnimator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J467B5MXV4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = LVAnimator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grv.LVAnimator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70153030211426D900F3D9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J467B5MXV4;
+				INFOPLIST_FILE = LVAnimatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grv.LVAnimatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LVAnimator.app/LVAnimator";
+			};
+			name = Debug;
+		};
+		70153031211426D900F3D9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J467B5MXV4;
+				INFOPLIST_FILE = LVAnimatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grv.LVAnimatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LVAnimator.app/LVAnimator";
+			};
+			name = Release;
+		};
+		70153033211426D900F3D9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J467B5MXV4;
+				INFOPLIST_FILE = LVAnimatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grv.LVAnimatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LVAnimator;
+			};
+			name = Debug;
+		};
+		70153034211426D900F3D9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J467B5MXV4;
+				INFOPLIST_FILE = LVAnimatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grv.LVAnimatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LVAnimator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70152FFF211426D800F3D9F5 /* Build configuration list for PBXProject "LVAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7015302A211426D900F3D9F5 /* Debug */,
+				7015302B211426D900F3D9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7015302C211426D900F3D9F5 /* Build configuration list for PBXNativeTarget "LVAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7015302D211426D900F3D9F5 /* Debug */,
+				7015302E211426D900F3D9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7015302F211426D900F3D9F5 /* Build configuration list for PBXNativeTarget "LVAnimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70153030211426D900F3D9F5 /* Debug */,
+				70153031211426D900F3D9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70153032211426D900F3D9F5 /* Build configuration list for PBXNativeTarget "LVAnimatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70153033211426D900F3D9F5 /* Debug */,
+				70153034211426D900F3D9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70152FFC211426D800F3D9F5 /* Project object */;
+}

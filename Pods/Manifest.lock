@@ -1,0 +1,29 @@
+PODS:
+  - Iconic (1.2)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - Iconic (from `https://github.com/dzenbot/Iconic.git`, tag `1.3`)
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  Iconic:
+    :git: https://github.com/dzenbot/Iconic.git
+    :tag: '1.3'
+
+CHECKOUT OPTIONS:
+  Iconic:
+    :git: https://github.com/dzenbot/Iconic.git
+    :tag: '1.3'
+
+SPEC CHECKSUMS:
+  Iconic: ee3d1fd2b4a408ca0d761221658490bfba5e7f4b
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: f40fa166b1a6c1963348baa967e774f398caa517
+
+COCOAPODS: 1.5.3
