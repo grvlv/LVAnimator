@@ -36,3 +36,6 @@ let vc = LVMineVC()
 animator.registerDelegate(vc: vc)
 present(vc, animated: true)
 ```
+
+
+***有问题可以加QQ:1254129365交流学习***
