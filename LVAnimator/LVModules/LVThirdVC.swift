@@ -41,18 +41,18 @@ class LVThirdVC: LVBaseViewController {
     
     func setupAnimator() {
         weak var weakSelf = self
-        animator.setup(vc: self, openEdgePan: true, transitionAction: {
+        animator.setup(panGestureVC: self, transitionAction: {
             weakSelf?.enterMine()
-        }) { (fromVC, toVC, operation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?) in
+        }) { (fromVC, toVC, operation) -> Dictionary<String, Any>? in
             if toVC is LVSettingVC {
                 return nil
             }
             switch operation {
             case .present:
                 if toVC is LVThirdDetailVC {
-                    return (0.4, LVThirdDetailPresentAnimation())
+                    return ["duration" : "0.4", "delegate" : LVThirdDetailPresentAnimation()]
                 } else if toVC is LVMineVC {
-                    return (0.4, LVMinePresentAnimation())
+                    return ["duration" : "0.4", "delegate" : LVMinePresentAnimation()]
                 }
             default: break
             }

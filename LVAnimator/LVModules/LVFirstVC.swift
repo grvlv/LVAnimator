@@ -52,17 +52,17 @@ class LVFirstVC: LVBaseViewController {
     
     func setupAnimator() {
         weak var weakSelf = self
-        animator.setup(vc: self, openEdgePan: true, transitionAction: {
+        animator.setup(panGestureVC: self, transitionAction: {
             weakSelf?.enterMine()
-        }) { (fromVC, toVC, operation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?) in
+        }) { (fromVC, toVC, operation) -> Dictionary<String, Any>? in
             if toVC is LVSettingVC {
                 return nil
             }
             switch operation {
             case .push:
-                return (1, LVFirstDetailPushAnimation())
+                return ["duration" : "1", "delegate" : LVFirstDetailPushAnimation()]
             case .present:
-                return (0.4, LVMinePresentAnimation())
+                return ["duration" : "0.4", "delegate" : LVMinePresentAnimation()]
             default: break
             }
             return nil

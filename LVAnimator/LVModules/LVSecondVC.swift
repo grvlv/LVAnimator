@@ -41,18 +41,18 @@ class LVSecondVC: LVBaseViewController {
     
     func setupAnimator() {
         weak var weakSelf = self
-        animator.setup(vc: self, openEdgePan: true, transitionAction: {
+        animator.setup(panGestureVC: self, transitionAction: {
             weakSelf?.enterMine()
-        }) { (fromVC, toVC, operation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?) in
+        }) { (fromVC, toVC, operation) -> Dictionary<String, Any>? in
             if toVC is LVSettingVC {
                 return nil
             }
             switch operation {
             case .present:
                 if toVC is LVSecondDetailVC {
-                    return (0.4, LVSecondDetailPresentAnimation())
+                    return ["duration" : "0.4", "delegate" : LVSecondDetailPresentAnimation()]
                 } else if toVC is LVMineVC {
-                    return (0.4, LVMinePresentAnimation())
+                    return ["duration" : "0.4", "delegate" : LVMinePresentAnimation()]
                 }
             default: break
             }

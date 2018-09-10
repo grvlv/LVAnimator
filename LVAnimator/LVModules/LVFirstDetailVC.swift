@@ -58,15 +58,10 @@ class LVFirstDetailVC: LVBaseViewController {
     
     func setupAnimator() {
         weak var weakSelf = self
-        animator.setup(vc: self, openEdgePan: true, transitionAction: {
+        animator.setup(panGestureVC: self, transitionAction: {
             weakSelf?.back()
-        }) { (fromVC, toVC, operation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?) in
-            switch operation {
-            case .pop:
-                return (1, LVFirstDetailPopAnimation())
-            default: break
-            }
-            return nil
+        }) { (fromVC, toVC, operation) -> Dictionary<String, Any>? in
+            return ["duration" : "1", "delegate" : LVFirstDetailPopAnimation()]
         }
     }
     

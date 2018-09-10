@@ -82,15 +82,10 @@ class LVSecondDetailVC: LVBaseViewController, LVSecondDetailViewDelegate {
     
     func setupAnimator() {
         weak var weakSelf = self
-        animator.setup(vc: self, transitionAction: {
+        animator.setup(panGestureVC: self, transitionAction: {
             weakSelf?.back()
-        }) { (fromVC, toVC, operation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?) in
-            switch operation {
-            case .dismiss:
-                return (0.4, LVSecondDetailDismissAnimation())
-            default: break
-            }
-            return nil
+        }) { (fromVC, toVC, operation) -> Dictionary<String, Any>? in
+            return ["duration" : "0.4", "delegate" : LVSecondDetailDismissAnimation()]
         }
     }
     

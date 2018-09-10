@@ -13,10 +13,17 @@ class LVAnimator: NSObject {
     
     lazy var helper = LVTransitioningDelegateHelper()
     
-    func setup(vc: UIViewController, openEdgePan: Bool? = false, transitionAction: (() -> ())? = nil, animationAction: ((_ fromVC: UIViewController?, _ toVC: UIViewController?, _ operation: TransitionOperation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?))? = nil) {
-        if openEdgePan! {
-            helper.openEdgePan = openEdgePan!
-            helper.addGestureForViewController(viewController: vc)
+    func setup(animationAction: @escaping (_ fromVC: UIViewController?, _ toVC: UIViewController?, _ operation: TransitionOperation) -> Dictionary<String, Any>?) {
+        setupAnimator(animationAction: animationAction)
+    }
+    
+    func setup(panGestureVC: UIViewController, transitionAction: @escaping () -> (), animationAction: @escaping (_ fromVC: UIViewController?, _ toVC: UIViewController?, _ operation: TransitionOperation) -> Dictionary<String, Any>?) {
+        setupAnimator(panGestureVC: panGestureVC, transitionAction: transitionAction, animationAction: animationAction)
+    }
+    
+    func setupAnimator(panGestureVC: UIViewController? = nil, transitionAction: (() -> ())? = nil, animationAction: @escaping (_ fromVC: UIViewController?, _ toVC: UIViewController?, _ operation: TransitionOperation) -> (Dictionary<String, Any>?)) {
+        if panGestureVC != nil {
+            helper.addGestureForViewController(viewController: panGestureVC!)
         }
         helper.transitionAction = transitionAction
         helper.animationBlock = animationAction

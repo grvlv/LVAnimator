@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum TransitionOperation {
+@objc enum TransitionOperation: Int {
     case push
     case pop
     case present
@@ -21,9 +21,8 @@ class LVTransitioningDelegateHelper: NSObject, UINavigationControllerDelegate, U
     var progress: CGFloat = 0
     var rate: CGFloat = 1 / 60
     var isReverse = false
-    var openEdgePan = false
     var transitionAction: (() -> ())?
-    var animationBlock: ((_ fromVC: UIViewController?, _ toVC: UIViewController?, _ operation: TransitionOperation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?))?
+    var animationBlock: ((_ fromVC: UIViewController?, _ toVC: UIViewController?, _ operation: TransitionOperation) -> Dictionary<String, Any>?)?
     var link: CADisplayLink?
     var edgePan: UIScreenEdgePanGestureRecognizer?
     var interactive: UIPercentDrivenInteractiveTransition?
@@ -34,12 +33,12 @@ class LVTransitioningDelegateHelper: NSObject, UINavigationControllerDelegate, U
             link?.add(to: RunLoop.current, forMode: .commonModes)
         }
     }
-
+    
     func stopLink() {
         link?.invalidate()
         link = nil
     }
-
+    
     @objc func linkUpdate() {
         progress += rate
         if progress >= 0.98 {
@@ -53,7 +52,7 @@ class LVTransitioningDelegateHelper: NSObject, UINavigationControllerDelegate, U
     
     func addGestureForViewController(viewController: UIViewController) {
         vc = viewController
-        if openEdgePan, edgePan == nil {
+        if vc != nil, edgePan == nil {
             edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(panGesture(pan:)))
             edgePan!.edges = .left
             vc?.view.addGestureRecognizer(edgePan!)
@@ -85,10 +84,16 @@ class LVTransitioningDelegateHelper: NSObject, UINavigationControllerDelegate, U
         }
     }
     
-    func transitionConfig(config: (duration: TimeInterval, delegate: LVTransitionAnimationDelegate)) -> LVTransitionAnimation {
+    func transitionConfig(config: Dictionary<String, Any>) -> LVTransitionAnimation {
         let transition = LVTransitionAnimation()
-        transition.duration = config.duration
-        transition.delegate = config.delegate
+        if let durationStr = config["duration"] as? String {
+            if let duration = TimeInterval(durationStr) {
+                transition.duration = duration
+            }
+        }
+        if let delegate = config["delegate"] as? LVTransitionAnimationDelegate {
+            transition.delegate = delegate
+        }
         return transition
     }
     

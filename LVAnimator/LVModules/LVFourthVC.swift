@@ -39,10 +39,10 @@ class LVFourthVC: LVBaseViewController {
     
     func setupAnimator() {
         weak var weakSelf = self
-        animator.setup(vc: self, openEdgePan: true, transitionAction: {
+        animator.setup(panGestureVC: self, transitionAction: {
             weakSelf?.enterMine()
-        }) { (fromVC, toVC, operation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?) in
-            return (0.4, LVMinePresentAnimation())
+        }) { (fromVC, toVC, operation) -> Dictionary<String, Any>? in
+            return ["duration" : "0.4", "delegate" : LVMinePresentAnimation()]
         }
     }
     
