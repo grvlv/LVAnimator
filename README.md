@@ -40,6 +40,6 @@ present(vc, animated: true)
 ```
 
 ## 更新
-2018.9.11 元祖改Dictionary，setup方法支持oc混编
+2018.9.11 元组改成Dictionary，setup方法支持oc混编
 
 ***有问题可以加QQ:1254129365交流学习***
