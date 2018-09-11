@@ -15,9 +15,9 @@ let animator = LVAnimator()
 
 ### 2、push转场简单使用
 ```
-animator.setup(vc: self) { (fromVC, toVC, operation) -> ((duration: TimeInterval, delegate: LVTransitionAnimationDelegate)?) in
+animator.setup { (fromVC, toVC, operation) -> Dictionary<String, Any>? in
     //动画时长，自定义动画
-    return (1, YourPushAnimation())
+    return ["duration" : "1", "delegate" : YourPushAnimation()]
 }
 ```
 如不需要自定转场动画，返回nil即可
@@ -39,5 +39,7 @@ animator.registerDelegate(vc: vc)
 present(vc, animated: true)
 ```
 
+##更新
+2018.9.11 元祖改Dictionary，setup方法支持oc混编
 
 ***有问题可以加QQ:1254129365交流学习***
