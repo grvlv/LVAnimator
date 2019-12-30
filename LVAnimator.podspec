@@ -10,4 +10,5 @@ Pod::Spec.new do |spec|
   spec.source_files  = "LVAnimator/LVAnimator/*"
   spec.requires_arc = true
   spec.ios.deployment_target = '8.0'
+  spec.swift_versions = "4.0"
 end
